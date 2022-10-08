@@ -1,0 +1,12 @@
+.action-icon
+{
+    color: #015f79;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.action-icon:hover
+{
+    color: #009aa2;
+}
