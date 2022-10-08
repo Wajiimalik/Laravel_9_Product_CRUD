@@ -72,7 +72,7 @@ class ProductController extends Controller
     {
         $product = Product::getProductForUpdate($id);
 
-        return view('products/update', compact('product'));
+        return view('products/edit', compact('product'));
     }
 
     /**

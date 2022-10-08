@@ -28,7 +28,7 @@
                     <td>{{ $product->stock }}</td>
                     <td>{{ $product->expiry_date }}</td>
                     <td class="">
-                        <a title="Edit Product" href="#" class="mx-2 action-icon"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a title="Edit Product" href="{{ route('products.edit',$product->id) }}" class="mx-2 action-icon"><i class="fa-solid fa-pen-to-square"></i></a>
                         <button title="Delete Product" class="mx-2 action-icon" onclick="deleteProduct('{{ $product->id }}', '{{ $product->productName }}')"><i class="fa-solid fa-trash"></i></button>
                         <a title="View Product" href="{{ route('products.show',$product->id) }}" class="mx-2 action-icon"><i class="fa-solid fa-eye"></i></a>
                     </td>
